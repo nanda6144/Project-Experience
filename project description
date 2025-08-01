@@ -1,0 +1,20 @@
+Project #1 : Operating Tech EV Role : Java Developer
+Environment : Intellij,JDK1.8, Spring, SpringBoot
+ 
+In the Operating Tech EV project, we are migrating the legacy XMF API service to the new ESB2 API service. The ESB2 service requires us to use Spring’s RestTemplate with custom configurations, replacing the outdated XMF service.
+ 
+The process begins by identifying where the XMF service is used within the Deployment Unit (DU), which is a microservice application. Once identified, we analyze the old XML request and response formats. Following this, we convert the XML data into Java objects using JAXB or similar APIs, depending on the libraries used by the DU.
+ 
+After completing this analysis, we transition the old XMF service API calls to the new RestTemplate API calls. Finally, we validate the migration by writing and executing integration tests for the application.
+ 
+Responsibilities:
+ 
+⮚ Understanding old XMF request/response data and identifying any differences between the old and new services. If differences are found, making changes accordingly. If any fields are missing, notifying the app team.
+⮚ Used the Diesel template to generate a binding project for new services.
+⮚ Migrating the old XMF service to the new ESB2 service with correct request details and using JUnit integration tests to verify if we are receiving the correct response.
+⮚ Verifying that the response is correctly parsed and the functionality works as expected. Added new logs to
+identify issues.
+⮚ Adding JUnit test cases for every change made as part of the SOA migration.
+⮚ Involved in the Application (DU) Production Development.
+⮚ Involved in fixing the defects based on the priority Escalations and Dev order (high, medium, low).
+⮚ Assisting teammates when they need my help
